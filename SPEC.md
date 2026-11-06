@@ -37,6 +37,7 @@ Vigilance : un premier sondage n'a pas trouvé d'outil équivalent, mais il n'é
 - Pages prérendues par spot pour le SEO.
 - Plages de vent par modèle d'aile (catalogue constructeurs).
 - Prix et budget (« coût par point de couverture »).
+- Fiche « mon matériel » (idée du propriétaire, 2026-11-06) : saisir le matériel possédé (ailes, et plus tard planches) pour obtenir une **note d'adéquation** au spot et au profil (prolonge le mode « J'ai déjà ces ailes » du §4), et une **estimation de valeur à l'occasion**. Point ouvert : source des prix (annonces d'occasion : conditions d'utilisation et droit des bases de données à vérifier ; saisie manuelle ; partenaire), et cohérence avec la licence non commerciale d'Open-Meteo (§5) si cela mène à de l'affiliation.
 - Carte image partageable pour les réseaux sociaux.
 - Version anglaise.
 

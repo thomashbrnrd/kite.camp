@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# Geocoding cache of scripts/spots/build-spots.mjs
+scripts/spots/.cache

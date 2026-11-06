@@ -30,5 +30,31 @@ useSeoMeta({
     <UMain>
       <NuxtPage />
     </UMain>
+
+    <UFooter>
+      <template #left>
+        <p class="text-xs text-muted">
+          Météo :
+          <ULink to="https://open-meteo.com/" target="_blank" class="underline"
+            >Open-Meteo.com</ULink
+          >
+          (CC BY 4.0). Spots : noms issus de
+          <ULink
+            to="https://fr.wikipedia.org/wiki/Spot_de_kitesurf"
+            target="_blank"
+            class="underline"
+            >Wikipédia</ULink
+          >
+          (CC BY-SA 4.0), coordonnées ©
+          <ULink
+            to="https://www.openstreetmap.org/copyright"
+            target="_blank"
+            class="underline"
+            >contributeurs OpenStreetMap</ULink
+          >
+          (ODbL).
+        </p>
+      </template>
+    </UFooter>
   </UApp>
 </template>

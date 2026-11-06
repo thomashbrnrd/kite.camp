@@ -3,15 +3,16 @@ import type { Spot } from '#shared/weather/types'
 
 const selected = defineModel<Spot | null>('selected', { default: null })
 
-const query = ref('')
+const {
+  searchTerm,
+  isQueryTooShort,
+  knownSpots,
+  places,
+  placesStatus,
+  placesError
+} = useSpotSearch()
+
 const coordinate = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 3 })
-const { results, status, error, lastQuery, search } = useSpotSearch()
-
-const canSearch = computed(() => query.value.trim().length >= 2)
-
-function submit() {
-  if (canSearch.value) search(query.value)
-}
 
 /** Region and country, or coordinates when the place has neither (e.g. disputed territories). */
 function placeDetails(spot: Spot): string {
@@ -23,83 +24,84 @@ function placeDetails(spot: Spot): string {
     `${coordinate.format(spot.latitude)} ; ${coordinate.format(spot.longitude)}`
   )
 }
+
+/** One shape for every menu entry: group labels have no `spot`. */
+interface MenuItem {
+  id: string
+  name: string
+  details?: string
+  icon?: string
+  type?: 'label'
+  spot?: Spot
+}
+
+const toItem = (spot: Spot): MenuItem => ({
+  id: spot.id,
+  name: spot.name,
+  details: placeDetails(spot),
+  icon: spot.kind === 'spot' ? 'i-lucide-wind' : 'i-lucide-map-pin',
+  spot
+})
+
+const items = computed<MenuItem[][]>(() => {
+  const groups: MenuItem[][] = []
+  if (knownSpots.value.length) {
+    groups.push([
+      { id: 'label:spots', type: 'label', name: 'Spots de kite' },
+      ...knownSpots.value.map(toItem)
+    ])
+  }
+  if (places.value.length) {
+    groups.push([
+      { id: 'label:places', type: 'label', name: 'Localités' },
+      ...places.value.map(toItem)
+    ])
+  }
+  return groups
+})
+
+const selectedItem = computed<MenuItem | undefined>({
+  get: () => (selected.value ? toItem(selected.value) : undefined),
+  set: (item) => {
+    selected.value = item?.spot ?? null
+  }
+})
+
+const emptyText = computed(() => {
+  if (isQueryTooShort.value) return 'Tape au moins 2 lettres.'
+  if (placesStatus.value === 'pending') return 'Recherche…'
+  return `Aucun spot ni lieu trouvé pour « ${searchTerm.value.trim()} ».`
+})
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <form role="search" @submit.prevent="submit">
-      <UFormField
-        label="Localité la plus proche du spot"
-        name="spot"
-        help="La recherche porte sur les noms de villes et de lieux (ex. Hyères, Dakhla, Paros, Itarema)."
+  <div class="flex flex-col gap-2">
+    <UFormField
+      label="Spot ou localité"
+      name="spot"
+      help="Nom d’un spot de kite (ex. Pounda, L’Almanarre) ou d’une ville proche."
+    >
+      <UInputMenu
+        v-model="selectedItem"
+        v-model:search-term="searchTerm"
+        :items="items"
+        label-key="name"
+        description-key="details"
+        by="id"
+        ignore-filter
+        :loading="placesStatus === 'pending'"
+        placeholder="Dakhla, Tarifa, Hyères…"
+        icon="i-lucide-search"
+        size="lg"
+        class="w-full"
       >
-        <div class="flex gap-2">
-          <UInput
-            v-model="query"
-            class="flex-1"
-            placeholder="Hyères"
-            icon="i-lucide-map-pin"
-            autocomplete="off"
-            size="lg"
-          />
-          <UButton
-            type="submit"
-            label="Rechercher"
-            size="lg"
-            :loading="status === 'pending'"
-            :disabled="!canSearch"
-          />
-        </div>
-      </UFormField>
-    </form>
+        <template #empty>{{ emptyText }}</template>
+      </UInputMenu>
+    </UFormField>
 
-    <div aria-live="polite">
-      <UAlert
-        v-if="status === 'error' && error"
-        color="error"
-        variant="subtle"
-        icon="i-lucide-circle-alert"
-        title="La recherche a échoué"
-        :description="dataErrorMessage(error)"
-        :actions="[
-          {
-            label: 'Réessayer',
-            color: 'error',
-            variant: 'outline',
-            onClick: submit
-          }
-        ]"
-      />
-
-      <p v-else-if="status === 'success' && !results.length" class="text-muted">
-        Aucun lieu trouvé pour « {{ lastQuery }} ». Essaie le nom de la ville la
-        plus proche du spot.
-      </p>
-
-      <ul
-        v-else-if="status === 'success'"
-        class="flex flex-col divide-y divide-default rounded-md border border-default"
-        aria-label="Résultats de la recherche"
-      >
-        <li v-for="spot in results" :key="spot.id">
-          <UButton
-            :color="selected?.id === spot.id ? 'primary' : 'neutral'"
-            :variant="selected?.id === spot.id ? 'soft' : 'ghost'"
-            :aria-pressed="selected?.id === spot.id"
-            :trailing-icon="
-              selected?.id === spot.id ? 'i-lucide-check' : undefined
-            "
-            block
-            class="justify-between rounded-none px-3 py-2.5 text-left"
-            @click="selected = spot"
-          >
-            <span class="flex flex-col">
-              <span class="font-medium text-highlighted">{{ spot.name }}</span>
-              <span class="text-sm text-muted">{{ placeDetails(spot) }}</span>
-            </span>
-          </UButton>
-        </li>
-      </ul>
-    </div>
+    <p v-if="placesError" class="text-sm text-error" role="status">
+      Recherche de localités indisponible : {{ dataErrorMessage(placesError) }}
+      Les spots connus restent disponibles.
+    </p>
   </div>
 </template>

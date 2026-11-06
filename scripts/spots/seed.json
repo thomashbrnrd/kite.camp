@@ -1,0 +1,1169 @@
+{
+  "$comment": "Spot names and geocoding queries. Names come from the sources in `nameSource` (wikipedia-fr: https://fr.wikipedia.org/wiki/Spot_de_kitesurf, wikipedia-nl: https://nl.wikipedia.org/wiki/Lijst_van_bekende_kitesurfplekken, owner: project owner, curated: well-known spots added and checked by hand). Coordinates are resolved by build-spots.mjs.",
+  "spots": [
+    {
+      "name": "Ilha do Guajiru",
+      "aliases": ["Guajiru", "Itarema"],
+      "country": "br",
+      "query": "Guajiru, Itarema",
+      "nameSource": "owner"
+    },
+    {
+      "name": "Pounda",
+      "aliases": ["Pounda Beach", "Paros", "Páros"],
+      "country": "gr",
+      "query": "Pounda, Paros",
+      "nameSource": "owner",
+      "expect": "Πάρου"
+    },
+    {
+      "name": "L'Almanarre",
+      "aliases": ["Almanarre", "Hyères", "Giens"],
+      "country": "fr",
+      "query": "Plage de l'Almanarre, Hyères",
+      "nameSource": "owner"
+    },
+    {
+      "name": "Dakhla",
+      "aliases": ["Lagune de Dakhla", "Dakhla Lagoon"],
+      "country": "ma",
+      "query": "Dakhla",
+      "nameSource": "owner"
+    },
+    {
+      "name": "Cumbuco",
+      "country": "br",
+      "query": "Cumbuco, Caucaia",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Jericoacoara",
+      "aliases": ["Jeri"],
+      "country": "br",
+      "query": "Vila de Jericoacoara",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Preá",
+      "aliases": ["Prea"],
+      "country": "br",
+      "query": "Preá, Cruz, Ceará",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Icaraí de Amontada",
+      "aliases": ["Icarai"],
+      "country": "br",
+      "query": "Icaraí de Amontada",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Paracuru",
+      "country": "br",
+      "query": "Paracuru",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Canoa Quebrada",
+      "country": "br",
+      "query": "Canoa Quebrada, Aracati",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Taíba",
+      "aliases": ["Taiba"],
+      "country": "br",
+      "query": "Taíba, São Gonçalo do Amarante, Ceará",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Atins",
+      "aliases": ["Lençóis Maranhenses"],
+      "country": "br",
+      "query": "Atins, Barreirinhas",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Barra Grande",
+      "aliases": ["Barra Grande Piauí"],
+      "country": "br",
+      "query": "Barra Grande, Cajueiro da Praia",
+      "nameSource": "curated"
+    },
+    {
+      "name": "São Miguel do Gostoso",
+      "aliases": ["Sao Miguel do Gostoso"],
+      "country": "br",
+      "query": "São Miguel do Gostoso",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Lagoa de Ibiraquera",
+      "aliases": ["Ibiraquera"],
+      "country": "br",
+      "query": "Lagoa de Ibiraquera, Imbituba",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Cabarete",
+      "aliases": ["Kite Beach Cabarete"],
+      "country": "do",
+      "query": "Cabarete",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Lac Bay",
+      "aliases": ["Lac Bai", "Bonaire", "Atlantis"],
+      "country": "bq",
+      "query": "Lac Bay, Bonaire",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Boca Grandi",
+      "aliases": ["Aruba"],
+      "country": "aw",
+      "query": "Boca Grandi, Aruba",
+      "nameSource": "curated"
+    },
+    {
+      "name": "El Yaque",
+      "aliases": ["Margarita"],
+      "country": "ve",
+      "query": "El Yaque, Margarita",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Los Roques",
+      "country": "ve",
+      "query": "Los Roques",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Cabo de la Vela",
+      "country": "co",
+      "query": "Cabo de la Vela",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Paracas",
+      "country": "pe",
+      "query": "Paracas",
+      "nameSource": "curated"
+    },
+    {
+      "name": "La Ventana",
+      "aliases": ["El Sargento"],
+      "country": "mx",
+      "query": "La Ventana, Baja California Sur",
+      "nameSource": "curated",
+      "expect": "La Paz"
+    },
+    {
+      "name": "Cape Hatteras",
+      "aliases": ["Hatteras", "Outer Banks"],
+      "country": "us",
+      "query": "Cape Hatteras",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Kanaha",
+      "aliases": ["Kite Beach Maui", "Maui"],
+      "country": "us",
+      "query": "Kanaha Beach Park, Maui",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Hood River",
+      "aliases": ["Columbia River Gorge"],
+      "country": "us",
+      "query": "Hood River, Hood River County, Oregon",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Squamish",
+      "aliases": ["Squamish Spit"],
+      "country": "ca",
+      "query": "Squamish, British Columbia",
+      "nameSource": "curated",
+      "expect": "Squamish"
+    },
+    {
+      "name": "Îles de la Madeleine",
+      "aliases": ["Iles de la Madeleine", "Magdalen Islands"],
+      "country": "ca",
+      "query": "Îles de la Madeleine",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pointe Faula",
+      "aliases": ["Le Vauclin", "Martinique"],
+      "country": "fr",
+      "query": "Pointe Faula, Le Vauclin",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Grand Cul-de-Sac",
+      "aliases": ["Saint-Barthélemy", "Saint Barth"],
+      "country": "fr",
+      "query": "Grand Cul-de-Sac, Saint-Barthélemy",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Baie Orientale",
+      "aliases": ["Orient Bay", "Saint-Martin"],
+      "country": "fr",
+      "query": "Baie Orientale, Saint-Martin",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Le Morne",
+      "aliases": ["Kite Lagoon", "One Eye", "Maurice", "Mauritius"],
+      "country": "mu",
+      "query": "Le Morne",
+      "nameSource": "wikipedia-fr",
+      "near": [-20.46, 57.32]
+    },
+    {
+      "name": "Anse la Raie",
+      "aliases": ["Maurice", "Mauritius"],
+      "country": "mu",
+      "query": "Anse la Raie",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Mourouk",
+      "aliases": ["Anse Mourouk", "Rodrigues"],
+      "country": "mu",
+      "query": "Mourouk, Rodrigues",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Saline-les-Bains",
+      "aliases": ["La Saline", "La Réunion"],
+      "country": "fr",
+      "query": "La Saline-les-Bains",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Baie de Sakalava",
+      "aliases": ["Diego-Suarez", "Antsiranana"],
+      "country": "mg",
+      "query": "Baie de Sakalava",
+      "nameSource": "wikipedia-fr",
+      "coordinates": {
+        "latitude": -12.26667,
+        "longitude": 49.4,
+        "source": "https://www.wikidata.org/wiki/Q27572759"
+      },
+      "countryName": "Madagascar",
+      "region": "Diana"
+    },
+    {
+      "name": "Mer d'Émeraude",
+      "aliases": ["Mer d'Emeraude", "Diego-Suarez"],
+      "country": "mg",
+      "query": "Mer d'Émeraude, Antsiranana",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Paje",
+      "aliases": ["Zanzibar"],
+      "country": "tz",
+      "query": "Paje, Zanzibar",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Langebaan",
+      "aliases": ["Shark Bay"],
+      "country": "za",
+      "query": "Langebaan",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Bloubergstrand",
+      "aliases": ["Big Bay", "Cape Town", "Le Cap"],
+      "country": "za",
+      "query": "Bloubergstrand",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Essaouira",
+      "country": "ma",
+      "query": "Essaouira",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Moulay Bouzerktoun",
+      "country": "ma",
+      "query": "Moulay Bouzerktoun",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Djerba",
+      "country": "tn",
+      "query": "Djerba",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "El Gouna",
+      "country": "eg",
+      "query": "El Gouna",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Soma Bay",
+      "country": "eg",
+      "query": "Soma Bay",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Safaga",
+      "aliases": ["Port Safaga"],
+      "country": "eg",
+      "query": "Safaga",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Ras Sudr",
+      "country": "eg",
+      "query": "Ras Sudr",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Mũi Né",
+      "aliases": ["Mui Ne"],
+      "country": "vn",
+      "query": "Mũi Né",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Bulabog Beach",
+      "aliases": ["Boracay"],
+      "country": "ph",
+      "query": "Bulabog, Malay",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Kalpitiya",
+      "country": "lk",
+      "query": "Kalpitiya",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Sanur",
+      "aliases": ["Bali"],
+      "country": "id",
+      "query": "Sanur, Bali",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Al Sawadi",
+      "aliases": ["Sawadi Beach"],
+      "country": "om",
+      "query": "As Sawadi, Oman",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Masirah",
+      "aliases": ["Île de Masirah", "Masirah Island"],
+      "country": "om",
+      "query": "Masirah Island",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Hua Hin",
+      "country": "th",
+      "query": "Hua Hin",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Lancelin",
+      "aliases": ["Perth"],
+      "country": "au",
+      "query": "Lancelin, Western Australia",
+      "nameSource": "curated",
+      "expect": "Lancelin"
+    },
+    {
+      "name": "Poé",
+      "aliases": ["Bourail", "Nouvelle-Calédonie"],
+      "country": "nc",
+      "query": "Plage de Poé, Bourail",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Îlot Maître",
+      "aliases": ["Ilot Maitre", "Nouméa"],
+      "country": "nc",
+      "query": "Îlot Maître",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pointe Magnin",
+      "aliases": ["Nouméa"],
+      "country": "nc",
+      "query": "Pointe Magnin, Nouméa",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Valdevaqueros",
+      "aliases": ["Tarifa"],
+      "country": "es",
+      "query": "Playa de Valdevaqueros, Tarifa",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Los Lances",
+      "aliases": ["Tarifa"],
+      "country": "es",
+      "query": "Playa de Los Lances, Tarifa",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Sotavento",
+      "aliases": ["Fuerteventura", "Risco del Paso"],
+      "country": "es",
+      "query": "Risco del Paso, Pájara",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Flag Beach",
+      "aliases": ["Corralejo", "Fuerteventura"],
+      "country": "es",
+      "query": "Corralejo",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "El Médano",
+      "aliases": ["El Medano", "Tenerife"],
+      "country": "es",
+      "query": "Playa de El Médano",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pozo Izquierdo",
+      "aliases": ["Gran Canaria"],
+      "country": "es",
+      "query": "Pozo Izquierdo",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Famara",
+      "aliases": ["Lanzarote"],
+      "country": "es",
+      "query": "Caleta de Famara",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Sant Pere Pescador",
+      "aliases": ["Roses", "Rosas", "Costa Brava"],
+      "country": "es",
+      "query": "Sant Pere Pescador",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Lagoa de Óbidos",
+      "aliases": ["Obidos", "Óbidos"],
+      "country": "pt",
+      "query": "Lagoa de Óbidos",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Alvor",
+      "aliases": ["Lagos", "Algarve"],
+      "country": "pt",
+      "query": "Alvor, Portimão",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Guincho",
+      "aliases": ["Praia do Guincho", "Cascais"],
+      "country": "pt",
+      "query": "Praia do Guincho",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Campione del Garda",
+      "aliases": ["Lac de Garde", "Lago di Garda"],
+      "country": "it",
+      "query": "Campione del Garda",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Lo Stagnone",
+      "aliases": ["Marsala", "Sicile"],
+      "country": "it",
+      "query": "Stagnone, Marsala",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Porto Pollo (Sardaigne)",
+      "aliases": ["Porto Puddu", "Palau"],
+      "country": "it",
+      "query": "Porto Pollo, Palau, Sardegna",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Prasonisi",
+      "aliases": ["Rhodes"],
+      "country": "gr",
+      "query": "Prasonisi, Rhodes",
+      "nameSource": "curated",
+      "expect": "Ρόδου"
+    },
+    {
+      "name": "Marmari",
+      "aliases": ["Kos"],
+      "country": "gr",
+      "query": "Μαρμάρι, Κως",
+      "nameSource": "curated",
+      "expect": "Κω"
+    },
+    {
+      "name": "Keros",
+      "aliases": ["Limnos", "Lemnos"],
+      "country": "gr",
+      "query": "Keros beach, Lemnos",
+      "nameSource": "curated",
+      "expect": "Λήμνου"
+    },
+    {
+      "name": "Mikri Vigla",
+      "aliases": ["Naxos"],
+      "country": "gr",
+      "query": "Mikri Vigla, Naxos",
+      "nameSource": "curated",
+      "expect": "Νάξου"
+    },
+    {
+      "name": "Alaçatı",
+      "aliases": ["Alacati", "Çeşme"],
+      "country": "tr",
+      "query": "Alaçatı",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Brouwersdam",
+      "country": "nl",
+      "query": "Brouwersdam, Ouddorp",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Workum",
+      "country": "nl",
+      "query": "Workum",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Zandvoort",
+      "country": "nl",
+      "query": "Zandvoort",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Scheveningen",
+      "country": "nl",
+      "query": "Scheveningen",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Zeebrugge",
+      "country": "be",
+      "query": "Zeebrugge",
+      "nameSource": "wikipedia-nl"
+    },
+    {
+      "name": "Sylt",
+      "aliases": ["Westerland"],
+      "country": "de",
+      "query": "Westerland, Sylt",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Fehmarn",
+      "aliases": ["Gold", "Grüner Brink"],
+      "country": "de",
+      "query": "Fehmarn",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Sankt Peter-Ording",
+      "aliases": ["SPO", "St. Peter-Ording"],
+      "country": "de",
+      "query": "Sankt Peter-Ording",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Hvide Sande",
+      "country": "dk",
+      "query": "Hvide Sande",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Klitmøller",
+      "aliases": ["Klitmoller", "Cold Hawaii"],
+      "country": "dk",
+      "query": "Klitmøller",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Jastarnia",
+      "aliases": ["Péninsule de Hel", "Hel"],
+      "country": "pl",
+      "query": "Jastarnia",
+      "nameSource": "curated"
+    },
+    {
+      "name": "Lac de Silvaplana",
+      "aliases": ["Silvaplana"],
+      "country": "ch",
+      "query": "Silvaplanersee",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Malo-les-Bains",
+      "aliases": ["Dunkerque"],
+      "country": "fr",
+      "query": "Malo-les-Bains, Dunkerque",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Wissant",
+      "country": "fr",
+      "query": "Wissant",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Wimereux",
+      "country": "fr",
+      "query": "Wimereux",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Hardelot",
+      "country": "fr",
+      "query": "Hardelot-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Touquet",
+      "aliases": ["Le Touquet-Paris-Plage"],
+      "country": "fr",
+      "query": "Le Touquet-Paris-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Berck",
+      "aliases": ["Berck-sur-Mer"],
+      "country": "fr",
+      "query": "Berck, Pas-de-Calais",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Fort-Mahon",
+      "aliases": ["Fort-Mahon-Plage"],
+      "country": "fr",
+      "query": "Fort-Mahon-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Crotoy",
+      "aliases": ["Baie de Somme"],
+      "country": "fr",
+      "query": "Le Crotoy",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Houlgate",
+      "country": "fr",
+      "query": "Houlgate",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Merville-Franceville",
+      "country": "fr",
+      "query": "Merville-Franceville-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Ouistreham",
+      "aliases": ["Riva-Bella", "Pointe du Siège"],
+      "country": "fr",
+      "query": "Ouistreham",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Asnelles",
+      "country": "fr",
+      "query": "Asnelles",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Siouville",
+      "aliases": ["Siouville-Hague"],
+      "country": "fr",
+      "query": "Siouville-Hague",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Jonville",
+      "aliases": ["Réville"],
+      "country": "fr",
+      "query": "Jonville, Réville",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Jullouville",
+      "country": "fr",
+      "query": "Jullouville",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Sillon",
+      "aliases": ["Saint-Malo"],
+      "country": "fr",
+      "query": "Plage du Sillon, Saint-Malo",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Baie de Lancieux",
+      "aliases": ["Lancieux"],
+      "country": "fr",
+      "query": "Lancieux",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Caroual",
+      "aliases": ["Erquy"],
+      "country": "fr",
+      "query": "Plage de Caroual, Erquy",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Rosaires",
+      "aliases": ["Plérin", "Baie de Saint-Brieuc"],
+      "country": "fr",
+      "query": "Les Rosaires, Plérin",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Dossen",
+      "aliases": ["Santec"],
+      "country": "fr",
+      "query": "Le Dossen, Santec",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Keremma",
+      "aliases": ["Tréflez", "Odé Wraz"],
+      "country": "fr",
+      "query": "Keremma, Tréflez",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Sainte-Marguerite",
+      "aliases": ["Landéda"],
+      "country": "fr",
+      "query": "Sainte-Marguerite, Landéda",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Trois Moutons",
+      "aliases": ["Lampaul-Ploudalmézeau"],
+      "country": "fr",
+      "query": "Lampaul-Ploudalmézeau",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pentrez",
+      "aliases": ["Saint-Nic", "Baie de Douarnenez"],
+      "country": "fr",
+      "query": "Pentrez, Saint-Nic",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Torche",
+      "aliases": ["Pors Carn", "Plomeur"],
+      "country": "fr",
+      "query": "Pointe de la Torche, Plomeur",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Glénan",
+      "aliases": ["Archipel des Glénan"],
+      "country": "fr",
+      "query": "Archipel des Glénan",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Fort-Bloqué",
+      "aliases": ["Ploemeur"],
+      "country": "fr",
+      "query": "Fort-Bloqué, Ploemeur",
+      "nameSource": "wikipedia-fr",
+      "expect": "Plœmeur"
+    },
+    {
+      "name": "Petite mer de Gâvres",
+      "aliases": ["Gâvres"],
+      "country": "fr",
+      "query": "Petite mer de Gâvres",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Kerhillio",
+      "aliases": ["Erdeven"],
+      "country": "fr",
+      "query": "Plage de Kerhillio, Erdeven",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Penthièvre",
+      "aliases": ["Quiberon", "Isthme de Penthièvre"],
+      "country": "fr",
+      "query": "Penthièvre, Saint-Pierre-Quiberon",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Penvins",
+      "aliases": ["Sarzeau"],
+      "country": "fr",
+      "query": "Penvins, Sarzeau",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pont-Mahé",
+      "aliases": ["Assérac", "Baie de Pont-Mahé"],
+      "country": "fr",
+      "query": "Pont-Mahé, Assérac",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Pen Bron",
+      "aliases": ["La Turballe"],
+      "country": "fr",
+      "query": "Pen Bron, La Turballe",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Baule",
+      "aliases": ["La Baule-Escoublac", "Pornichet"],
+      "country": "fr",
+      "query": "La Baule-Escoublac",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Brevin-les-Pins",
+      "aliases": ["L'Ermitage", "Saint-Brevin"],
+      "country": "fr",
+      "query": "Saint-Brevin-les-Pins",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Fromentine",
+      "aliases": ["La Barre-de-Monts"],
+      "country": "fr",
+      "query": "Fromentine",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Jean-de-Monts",
+      "country": "fr",
+      "query": "Saint-Jean-de-Monts",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Gilles-Croix-de-Vie",
+      "country": "fr",
+      "query": "Saint-Gilles-Croix-de-Vie",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Bretignolles-sur-Mer",
+      "aliases": ["Plage des Dunes"],
+      "country": "fr",
+      "query": "Bretignolles-sur-Mer",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Palmyre",
+      "aliases": ["Les Mathes", "La Tremblade"],
+      "country": "fr",
+      "query": "La Palmyre, Les Mathes",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Châtelaillon-Plage",
+      "aliases": ["Châtelaillon"],
+      "country": "fr",
+      "query": "Châtelaillon-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Lac d'Hourtin",
+      "aliases": ["Hourtin"],
+      "country": "fr",
+      "query": "Lac d'Hourtin-Carcans",
+      "nameSource": "wikipedia-fr",
+      "coordinates": {
+        "latitude": 45.13694,
+        "longitude": -1.11361,
+        "source": "https://www.wikidata.org/wiki/Q1535929"
+      },
+      "countryName": "France",
+      "region": "Nouvelle-Aquitaine"
+    },
+    {
+      "name": "Lacanau",
+      "aliases": ["Lacanau-Océan"],
+      "country": "fr",
+      "query": "Lacanau-Océan",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Hume",
+      "aliases": ["Gujan-Mestras", "Bassin d'Arcachon"],
+      "country": "fr",
+      "query": "La Hume, Gujan-Mestras",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Biscarrosse",
+      "aliases": ["Biscarrosse-Plage"],
+      "country": "fr",
+      "query": "Biscarrosse-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Hossegor",
+      "aliases": ["Soorts-Hossegor"],
+      "country": "fr",
+      "query": "Soorts-Hossegor",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Anglet",
+      "country": "fr",
+      "query": "Anglet",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Cyprien",
+      "aliases": ["Canet-en-Roussillon"],
+      "country": "fr",
+      "query": "Saint-Cyprien-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Barcarès",
+      "aliases": ["Barcarès"],
+      "country": "fr",
+      "query": "Le Barcarès",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Coussoules",
+      "aliases": ["Leucate", "La Franqui"],
+      "country": "fr",
+      "query": "Les Coussoules, Leucate",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Dosses",
+      "aliases": [
+        "Parc des Dosses",
+        "Le Barcarès",
+        "Leucate",
+        "Étang de Leucate"
+      ],
+      "country": "fr",
+      "query": "Avenue des Dosses, Le Barcarès",
+      "nameSource": "wikipedia-fr",
+      "expect": "Barcarès"
+    },
+    {
+      "name": "Étang de La Palme",
+      "aliases": ["La Palme"],
+      "country": "fr",
+      "query": "Étang de La Palme",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Gruissan",
+      "country": "fr",
+      "query": "Gruissan",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Narbonne-Plage",
+      "country": "fr",
+      "query": "Narbonne-Plage",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Pierre-la-Mer",
+      "aliases": ["Fleury"],
+      "country": "fr",
+      "query": "Saint-Pierre-la-Mer, Fleury",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Tamarissière",
+      "aliases": ["Agde"],
+      "country": "fr",
+      "query": "La Tamarissière, Agde",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Les Aresquiers",
+      "aliases": ["Frontignan", "Étang d'Ingril"],
+      "country": "fr",
+      "query": "Les Aresquiers, Vic-la-Gardiole",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Villeneuve-lès-Maguelone",
+      "aliases": ["Maguelone"],
+      "country": "fr",
+      "query": "Villeneuve-lès-Maguelone",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Palavas-les-Flots",
+      "aliases": ["Palavas"],
+      "country": "fr",
+      "query": "Palavas-les-Flots",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Petit Travers",
+      "aliases": ["Carnon"],
+      "country": "fr",
+      "query": "Petit Travers, Mauguio",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Grand Travers",
+      "aliases": ["La Grande-Motte"],
+      "country": "fr",
+      "query": "Grand Travers, La Grande-Motte",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Étang de Thau",
+      "aliases": ["Sète", "Marseillan", "Mèze"],
+      "country": "fr",
+      "query": "Étang de Thau",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "L'Espiguette",
+      "aliases": ["Le Grau-du-Roi", "Port-Camargue"],
+      "country": "fr",
+      "query": "Plage de l'Espiguette",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Beauduc",
+      "aliases": ["Camargue"],
+      "country": "fr",
+      "query": "Beauduc, Arles",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Plage Napoléon",
+      "aliases": ["Port-Saint-Louis-du-Rhône", "Carteau"],
+      "country": "fr",
+      "query": "Plage Napoléon, Port-Saint-Louis-du-Rhône",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Le Jaï",
+      "aliases": ["Étang de Berre", "Marignane"],
+      "country": "fr",
+      "query": "Le Jaï, Marignane",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Aygulf",
+      "aliases": ["Fréjus"],
+      "country": "fr",
+      "query": "Saint-Aygulf",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Antibes",
+      "country": "fr",
+      "query": "Antibes",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Saint-Laurent-du-Var",
+      "country": "fr",
+      "query": "Saint-Laurent-du-Var",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Lac de Serre-Ponçon",
+      "aliases": ["Serre-Ponçon"],
+      "country": "fr",
+      "query": "Lac de Serre-Ponçon",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Lac de Monteynard",
+      "aliases": ["Monteynard-Avignonet"],
+      "country": "fr",
+      "query": "Lac de Monteynard-Avignonet",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Calvi",
+      "country": "fr",
+      "query": "Calvi, Haute-Corse",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "L'Ostriconi",
+      "aliases": ["Ostriconi", "Palasca"],
+      "country": "fr",
+      "query": "Ostriconi",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Porto Pollo (Corse)",
+      "aliases": ["Porto Pollo", "Serra-di-Ferro"],
+      "country": "fr",
+      "query": "Porto Pollo, Serra-di-Ferro",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Ventilegne",
+      "aliases": ["Figari", "Pont de Ventilegne"],
+      "country": "fr",
+      "query": "Ventilegne, Figari",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "La Tonnara",
+      "aliases": ["Bonifacio"],
+      "country": "fr",
+      "query": "Plage de la Tonnara, Bonifacio",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Piantarella",
+      "aliases": ["Bonifacio"],
+      "country": "fr",
+      "query": "Piantarella, Bonifacio",
+      "nameSource": "wikipedia-fr"
+    },
+    {
+      "name": "Balistra",
+      "aliases": ["Bonifacio"],
+      "country": "fr",
+      "query": "Plage de Balistra, Bonifacio",
+      "nameSource": "wikipedia-fr"
+    }
+  ]
+}
