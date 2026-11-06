@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "id": 2463447,
+      "name": "Dakhla",
+      "latitude": 23.68477,
+      "longitude": -15.95798,
+      "elevation": 6,
+      "feature_code": "PPLA",
+      "country_code": "EH",
+      "timezone": "Africa/El_Aaiun",
+      "population": 106277
+    },
+    {
+      "id": 8542188,
+      "name": "Dakhla",
+      "latitude": 30.41145,
+      "longitude": -9.55344,
+      "elevation": 83,
+      "feature_code": "PPLX",
+      "country_code": "MA",
+      "admin1_id": 11281882,
+      "admin2_id": 2561655,
+      "timezone": "Africa/Casablanca",
+      "population": 55618,
+      "country_id": 2542007,
+      "country": "Maroc",
+      "admin1": "Souss-Massa",
+      "admin2": "Agadir-Ida-ou-Tnan"
+    },
+    {
+      "id": 2380442,
+      "name": "Dakhla",
+      "latitude": 15.41033,
+      "longitude": -11.01038,
+      "elevation": 185,
+      "feature_code": "PPL",
+      "country_code": "MR",
+      "admin1_id": 2381344,
+      "timezone": "Africa/Nouakchott",
+      "country_id": 2378080,
+      "country": "Mauritanie",
+      "admin1": "Région de l’Assaba"
+    }
+  ],
+  "generationtime_ms": 0.15211105
+}

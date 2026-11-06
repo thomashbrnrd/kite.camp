@@ -16,3 +16,19 @@
   --color-green-900: #0a5331;
   --color-green-950: #052e16;
 }
+
+/*
+ * Shades chosen so that text on the page and on subtle tints meets WCAG AA (4.5:1).
+ * `.dark` must be redeclared: this file loads after Nuxt UI, so `:root` alone would win in dark mode too.
+ */
+:root {
+  --ui-primary: var(--ui-color-primary-700);
+  --ui-warning: var(--ui-color-warning-800);
+  --ui-error: var(--ui-color-error-700);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-warning: var(--ui-color-warning-400);
+  --ui-error: var(--ui-color-error-400);
+}
